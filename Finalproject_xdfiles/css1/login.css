@@ -1,0 +1,17 @@
+.navbar a:hover {
+background-color: lightgray;
+border-radius: 8px;
+}
+        .box input {
+  width: 100%;
+  clear: both;
+}
+         footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ background-color: black; border-top: 10px;
+}
+.page-header .container .navbar-nav .row-container{
+    position: absolute; right: 0;
+}
