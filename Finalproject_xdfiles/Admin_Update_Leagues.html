@@ -5,16 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css1/bootstrap.min.css">
     <style>
 
 .navbar a:hover {
 background-color: lightgray;
 border-radius: 8px;
 }
-       
+ #footer {
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background:#6cf;
+}  
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
     </style>
-  <title>Forgot Password</title>
+  <title>AdminCPScorecardpage</title>
 </head>
 <body>
     <nav class="navbar-fluid page-header col-xl-12 bg-light navbar-expand justify-content-center">
@@ -39,32 +59,51 @@ border-radius: 8px;
   </div>
   </div>
 </nav>
+ 
+    <div class="container col-xl-12 " style="padding-left: 120px;padding-top: 50px;">
+    <a href="#"> <button type="button" class="btn btn-light " style=" margin-right: 100px;">Control Panel</button>  </a>
     
-
-    <div class="container  col-xl-6" style=" padding-top: 50px; padding-right: 1150px;">
-        
-       <div class="card" style="width: 75rem;">
-  <div class="card-body">
-   <h1>Forgot Password</h1><hr> 
-<form method="post" action="index.html">
-<div class="box">
-
-
-    <p class="text-center">Please enter a valid email address you used when you registered. When you click the Submit button we will email you password reset instructions.</p>
-    <div class="container text-center">
-     <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="email" name="email" value="" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" style="width: 300px;" class="email" /><br><br>
     </div>
+    
+  <div class="container col-xl-12" style="padding-left: 120px;padding-top: 50px;">
+   
+             
+   
+
+   
+</div>
+   
+  
+     <div class="container col-xl-6 justify-content-center" style=" padding-top: 50px; padding-bottom: 50px;">
+      
+        <div class="card " style="width: 35rem;">
+  <div class="card-body ">
+   
+<form class="form-horizontal" action="action_page.php">
+   
+  <div class="container"> 
+    <h1>Update League</h1>
+   
+    <hr>
 
   
- <!-- End Btn -->
+      <label for="LeagueName" class="label" style=" margin-bottom: 50px; padding-right: 10px;"><b>Select League</b></label>
+<select  name="LeagueName" style="height: 30px;;width: 200px;" required>
+    <option value="LeagueName">Summer League 2018</option>  
+    <option value="LeagueName">Winter League 2018</option>
+    <option value="LeagueName">Summer League 2017</option>
+    <option value="LeagueName">Winter League 2017</option>
+      
 
+
+  </select><br>
 
     
-  <a class="nav-item nav-link active text-center"  href="#"><button type="button" class="btn btn-primary " >Submit</button></a>
+    <button type="button" class="btn btn-primary " >Update League Manager</button><br><br>
+       <button type="button" class="btn btn-primary " >Update League Name</button><br><br>
+       <button type="button" class="btn btn-primary " >Update League Date</button><br><br>
   
-</div> <!-- End Box -->
-  
+    </div>
 </form>
 
 
@@ -74,13 +113,19 @@ border-radius: 8px;
 </div>
     </div>
     
-
     
+    
+    
+    
+    
+    
+   
+
 
 <!-- container -->
     
     <!-- Footer -->
-<footer class="footer" style="background-color: black; padding-top: 50px;">
+<footer class="footer" style="background-color: black;">
 <div class="footer-copyright text-center py-3">
   <!-- Copyright -->
     <p>© 2018 Copyright:</p><a href="#"> Sandiegosports.com</a>

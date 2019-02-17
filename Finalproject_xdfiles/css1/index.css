@@ -1,0 +1,44 @@
+.navbar a:hover {
+background-color: lightgray;
+border-radius: 8px;
+}
+.bt{
+    position: absolute;
+    right: 0;
+}
+
+.navbar-nav .nav-item{
+    padding-right: 50px;
+}
+.tb{
+padding-top: 50px; 
+padding-left: 80px;
+}
+.tb1{
+    padding-right: 85px;
+}
+
+.cd{
+    width: 35rem;height: 23rem;
+}
+
+.tb-1{
+    padding-left: 180px;
+}
+.cd-1{
+    width: 15rem;height: 23rem;
+}
+.br{
+    border-right: 100px;
+    
+}
+.cd-1 .card-body{
+    margin-bottom:  100px;
+}
+.cd-s{
+    width: 15rem;  height: 8rem;
+}
+.footer{
+    background-color: black;
+    margin-top:  50px;
+}

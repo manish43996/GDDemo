@@ -12,18 +12,37 @@
 background-color: lightgray;
 border-radius: 8px;
 }
-       
+ #footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background:#6cf;
+}  
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
     </style>
-  <title>Forgot Password</title>
+  <title>PlayerPage</title>
 </head>
 <body>
     <nav class="navbar-fluid page-header col-xl-12 bg-light navbar-expand justify-content-center">
   <div class="container">
       <div class="navbar-nav">
           <a class="nav-brand-item nav-link active" href="#"><blockquote><strong class="h4">San Diego</strong>&reg;</blockquote>Sports</a>
-        <div class="row-container" style="position: absolute; right: 0;">
         
-      </div>
       </div>
   </div>
 </nav>
@@ -39,48 +58,57 @@ border-radius: 8px;
   </div>
   </div>
 </nav>
-    
-
-    <div class="container  col-xl-6" style=" padding-top: 50px; padding-right: 1150px;">
-        
-       <div class="card" style="width: 75rem;">
-  <div class="card-body">
-   <h1>Forgot Password</h1><hr> 
-<form method="post" action="index.html">
-<div class="box">
-
-
-    <p class="text-center">Please enter a valid email address you used when you registered. When you click the Submit button we will email you password reset instructions.</p>
-    <div class="container text-center">
-     <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;
-        <input type="email" name="email" value="" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" style="width: 300px;" class="email" /><br><br>
+ 
+    <div class="container col-xl-12 col-md-6" style="padding: 50px 50px 40px;">
+   <div class="row container col-xl-12">
+        <div class="container col-xl-4" style="padding-left: 75px;" >
+    <h1>Summer League 2018</h1>
+   
+        </div>
+    <div class="column container col-xl-4 " style="padding-left: 50px; padding-top: 10px;">
+       
+        <button type="button" class="btn btn-primary">Join Team</button>
     </div>
-
-  
- <!-- End Btn -->
-
-
     
-  <a class="nav-item nav-link active text-center"  href="#"><button type="button" class="btn btn-primary " >Submit</button></a>
-  
-</div> <!-- End Box -->
-  
-</form>
-
-
-  
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+     <div class="container col-xl-4 col-md-4" style="padding-right: 200px;">
+         <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Standings</h5><hr>
+    
+    <a href="#" class="card-link">Kings&emsp;&emsp;&emsp;&emsp;&emsp;</a>5-0<br>
+    <a href="#" class="card-link">Rockets&emsp;&emsp;&emsp;&emsp;</a>4-1<br>
+    <a href="#" class="card-link">Celtics&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;</a>3-2<br>
+      <a href="#" class="card-link">Lakers&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;</a>0-5<br>
+      
+     
   </div>
 </div>
     </div>
+        </div>
+         <div class="container  col-xl-12 col-md-4" style="padding-left: 75px;">
+<div class="card" style="width: 45rem;">
+  <div class="card-body">
+   
+   
+    <p class="card-text"></p>
+      <p>For competitive players with high school experience. Games are played on Wednesday
+nights starting {{startDate}}. </p>
+
+      
+      
     
+  </div>
+</div>
+    </div>
 
     
+</div>
+
 
 <!-- container -->
     
     <!-- Footer -->
-<footer class="footer" style="background-color: black; padding-top: 50px;">
+<footer class="footer" style="background-color: black;">
 <div class="footer-copyright text-center py-3">
   <!-- Copyright -->
     <p>© 2018 Copyright:</p><a href="#"> Sandiegosports.com</a>
